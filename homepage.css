@@ -78,8 +78,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #03577e;
+  background: #215668;
   mix-blend-mode: overlay;
+  box-shadow: inset 60px 60px 60px black, inset -60px -60px 60px black;
 }
 
 .text h2 {
@@ -108,6 +109,13 @@
   color: black;
   margin-top: 10px;
   letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.text a:hover {
+  transform: scale(1.1) translateY(-5px);
+  background: blue;
+  color: white;
 }
 
 .social {
@@ -131,16 +139,9 @@
   transition: 0.5s;
 }
 
-.social li a{
-  display: inline-block;
-  margin-right: 20px;
-  color: aliceblue;
-  transition: 0.5s;
-}
-
 .social li a:hover {
   transform: scale(1.1) translateY(-10px);
-  color: green;
+  color: blue;
 }
 
 .menu {

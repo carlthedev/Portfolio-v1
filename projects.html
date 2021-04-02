@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C31RDKC9R"></script>
+  <script src="https://kit.fontawesome.com/6e726280be.js"></script>
+  <title>Projects</title>
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo"><i class="fas fa-project-diagram"></i> Projects</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="abstract.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+
+    <div class="cards">
+      
+      <div class="mne">
+        <img src="mne.png" alt="Snow">
+        <div class="centered"><h2>MNE autos</h2>
+          <p>Car sales</p>
+          <p>HTML CSS</p>
+          <a href="https://github.com/kodiri/accessibility-live.git"><i class="fab fa-github"></i>Source code</a>
+          <a href="http://mneautos.co.uk">
+              <p><button>Visit Live site</button></p>
+          </a></div>
+      </div>
+
+      <div class="xslive">
+        <img src="accesslive.png" alt="Snow">
+        <div class="centered"><h2>Accesibility Live</h2>
+          <p>Team app</p>
+          <p>REACT JS</p>
+          <a href="https://github.com/kodiri/accessibility-live.git"><i class="fab fa-github"></i>Source code</a>
+          <a href="https://accessibilitylive.herokuapp.com">
+              <p><button>Visit Live site</button></p>
+          </a></div>
+      </div>
+
+      <div class="crypto">
+        <img src="mne.png" alt="Snow">
+        <div class="centered"><h2>Crypto</h2>
+          <p>Cryptocurrency website</p>
+          <p>HTML CSS JS</p>
+          <a href="https://github.com/kodiri/accessibility-live.git"><i class="fab fa-github"></i>Source code</a>
+          <a href="https://accessibilitylive.herokuapp.com">
+              <p><button>Visit Live site</button></p>
+          </a></div>
+      </div>
+    </div>
+
+    <ul class="social">
+      <li><a href="https://www.linkedin.com/in/carlcrossdeveloper"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://www.freecodecamp.org/carl-the-dev"><i class="fab fa-free-code-camp"></i></a></li>
+      <li><a href="https://github.com/carlthedev"><i class="fab fa-github"></i></a></li>
+      <li><a href="mailto:carl.cross@yahoo.co.uk"><i class="far fa-envelope"></i></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#">About me</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+
+</body>
+
+</html>
