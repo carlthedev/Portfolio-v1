@@ -137,98 +137,43 @@
   }
 }
 
-.cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin: auto;
-  width: 100%;
-  padding: 40px 0px 10px;
-}
-
-.mne, .xslive, .crypto {
+.landing {
   z-index: 1;
+  font-family:"Arial", Serif;
+  overflow-x:hidden;
+  font-size: 1.5em;
+  padding-top: 50px;
+  color: rgb(175, 175, 180);
   text-align: center;
+  padding: 80px 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.landing img {
+    width: auto;
+    height: 200px;
+    border-radius: 100px;
+    border: 3px solid rgb(11, 26, 230);
+}
+
+.landing p{
+  font-family:"Arial", Serif;
+  overflow-x:hidden;
+  color: rgb(175, 175, 180);
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  background-color: white;
-  border-radius: 5px;
-  border: 3px solid rgb(246, 245, 248);
-  margin: 50px 0px;
 }
 
-.crypto img, .xslive img, .mne img {
-  width: 25vw;
-  height: auto;
-  object-fit: cover;
-}
-
-.centered {
-  padding-bottom: 10px;
-}
-
-.centered a{
-  font-size: 25px;
-}
-
-.centered, .centered a {
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-.centered a:hover {
-  color: blue
-}
-
-.centered i:hover {
-  color: blue
-}
-
-.centered i, .centered a{
-  color: rgb(64, 64, 117);
-  font-size: 15px;
-  padding: 10px 5px;
-}
-
-.centered button:hover {
-  z-index: 1;
-  background: blue;
-  color: white;
-}
-
-button {
-  font-size: 15px;
-  padding: 5px;
-  transition: 0.5s;
-  border-radius: 15px;
-}
-
-button:hover {
-  font-size: 15px;
-  padding: 5px;
-  transform: scale(1.1) translateY(-1px);
-  color: blue;
-}
-
-@media(max-width: 1000px) {
-  .crypto img, .xslive img, .mne img {
-    width: 350px;
-  }
-}
-
-@media(max-width: 550px) {
-  .mne {
-    margin-top: 50px;
-  }
-  .xslive, .crypto {
-    margin-top: 0px;
-  }
-  .xslive, .crypto {
-    margin-bottom: 50px;
-  }
-}
-
-@media(max-width: 800px) {
-  .crypto img, .xslive img, .mne img {
-    width: 250px;
-  }
+.boxed {
+  border: 1px solid blue ;
+  font-size: 2vw;
+  height: 40px;
+  line-height: 40px;
+  margin: 1px;
 }
