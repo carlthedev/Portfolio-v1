@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .showcase {
@@ -142,11 +143,11 @@
   font-family:"Arial", Serif;
   overflow-x:hidden;
   font-size: 1.5em;
-  padding-top: 50px;
   color: rgb(175, 175, 180);
   text-align: center;
-  padding: 80px 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .landing img {
@@ -162,12 +163,13 @@
   color: rgb(175, 175, 180);
   text-align: left;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 20px;
 }
 
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-between;
+  padding-top: 20px;
 }
 
 .boxed {
@@ -176,4 +178,11 @@
   height: 40px;
   line-height: 40px;
   margin: 1px;
+}
+
+@media(max-width: 800px) {
+  .landing {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
 }
